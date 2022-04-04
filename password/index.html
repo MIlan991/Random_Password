@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Karla:wght@400;500;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <section>
+        
+        <div class="container">
+
+            <div class="title">
+                <h1>Generate a<br><span>random password</span></h1>
+                <h3>Never use an insecure password again.</h3>
+            </div>
+    
+            <div class="password-operations">
+                <div class="generate-button">
+                    <button id="button-el" class="btn" onclick="generatePassword(),generatePassword2(),generatePassword3(),generatePassword4()"><img src="images/btn-icon.svg">Generate passwords</button>
+                </div>
+                
+                <div class="slidecontainer">
+                  <input type="range" min="6" max="16" value="12" class="slider" id="myRange">
+                  <p>Password Length: <span id="demo"></span></p>
+                </div>
+            </div>
+    
+            <div class="border"></div>
+    
+            <div class="grid">
+                <div id="output-el1" class="password-output">
+                    <img src="images/dots.svg">
+                </div>
+                <div id="output-el2" class="password-output">
+                    <img src="images/dots.svg">
+                </div>
+                <div id="output-el3" class="password-output">
+                    <img src="images/dots.svg">
+                </div>
+                <div id="output-el4" class="password-output">
+                    <img src="images/dots.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
